@@ -1,0 +1,198 @@
+-- CURRENT_DATE()
+
+SELECT CURRENT_DATE();
+
+
+-- CURRENT_TIME()
+
+SELECT CURRENT_TIME();
+
+
+-- CURRENT_TIMESTAMP()
+
+SELECT CURRENT_TIMESTAMP();
+
+
+-- NOW()
+
+SELECT NOW();
+
+
+-- CURDATE()
+
+SELECT CURDATE();
+
+
+-- CURTIME()
+
+SELECT CURTIME();
+
+
+-- YEAR()
+
+SELECT YEAR(joining_date)
+FROM Employees;
+
+
+-- MONTH()
+
+SELECT MONTH(joining_date)
+FROM Employees;
+
+
+-- MONTHNAME()
+
+SELECT MONTHNAME(joining_date)
+FROM Employees;
+
+
+-- DAY()
+
+SELECT DAY(joining_date)
+FROM Employees;
+
+
+-- DAYNAME()
+
+SELECT DAYNAME(joining_date)
+FROM Employees;
+
+
+-- DAYOFMONTH()
+
+SELECT DAYOFMONTH(joining_date)
+FROM Employees;
+
+
+-- DAYOFYEAR()
+
+SELECT DAYOFYEAR(joining_date)
+FROM Employees;
+
+
+-- DAYOFWEEK()
+
+SELECT DAYOFWEEK(joining_date)
+FROM Employees;
+
+
+-- WEEK()
+
+SELECT WEEK(joining_date)
+FROM Employees;
+
+
+-- WEEKDAY()
+
+SELECT WEEKDAY(joining_date)
+FROM Employees;
+
+
+-- QUARTER()
+
+SELECT QUARTER(joining_date)
+FROM Employees;
+
+
+-- HOUR()
+
+SELECT HOUR(NOW());
+
+
+-- MINUTE()
+
+SELECT MINUTE(NOW());
+
+
+-- SECOND()
+
+SELECT SECOND(NOW());
+
+
+-- DATE()
+
+SELECT DATE(NOW());
+
+
+-- TIME()
+
+SELECT TIME(NOW());
+
+
+-- DATEDIFF()
+
+SELECT DATEDIFF(CURDATE(), joining_date)
+FROM Employees;
+
+
+-- TIMESTAMPDIFF()
+
+SELECT TIMESTAMPDIFF(YEAR, joining_date, CURDATE())
+FROM Employees;
+
+
+-- DATE_ADD()
+
+SELECT DATE_ADD(joining_date, INTERVAL 30 DAY)
+FROM Employees;
+
+
+-- DATE_SUB()
+
+SELECT DATE_SUB(joining_date, INTERVAL 30 DAY)
+FROM Employees;
+
+
+-- ADDDATE()
+
+SELECT ADDDATE(joining_date, INTERVAL 15 DAY)
+FROM Employees;
+
+
+-- SUBDATE()
+
+SELECT SUBDATE(joining_date, INTERVAL 15 DAY)
+FROM Employees;
+
+
+-- ADDTIME()
+
+SELECT ADDTIME('10:30:00', '02:15:00');
+
+
+-- SUBTIME()
+
+SELECT SUBTIME('10:30:00', '02:15:00');
+
+
+-- LAST_DAY()
+
+SELECT LAST_DAY(joining_date)
+FROM Employees;
+
+
+-- MAKEDATE()
+
+SELECT MAKEDATE(2025, 150);
+
+
+-- MAKETIME()
+
+SELECT MAKETIME(10, 30, 45);
+
+
+-- EXTRACT()
+
+SELECT EXTRACT(YEAR FROM joining_date)
+FROM Employees;
+
+
+-- DATE_FORMAT()
+
+SELECT DATE_FORMAT(joining_date, '%d-%m-%Y')
+FROM Employees;
+
+
+-- STR_TO_DATE()
+
+SELECT STR_TO_DATE('15-07-2005', '%d-%m-%Y');
